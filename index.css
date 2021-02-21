@@ -1,0 +1,90 @@
+* { 
+    margin:0;
+    border:0;
+    font-size:100%;
+    outline: 0;
+    padding:0;
+    user-select: none;
+}
+
+#frame{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: auto;
+}
+
+.button{
+    margin:auto 1rem;
+    padding:1rem;
+    text-shadow: 0px 0px 1px black;
+    z-index: 2;
+    color:white;
+    font-size: 150%;
+    
+}
+
+.button:hover{
+    text-shadow: 0px 0px 3px black;
+    color:rgba(199, 199, 199, 0.5);
+}
+
+.button:active{
+    text-shadow: 0px 0px 3px white;
+    color:white;
+}
+
+img{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width:100vw;
+    object-fit: contain;
+    transition: opacity 300ms ease-in-out .1s;
+    opacity: 0;
+}
+
+.statusBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width:80%;
+    justify-content: space-evenly;
+    margin:3rem auto;
+}
+
+.statusContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+
+.statusContainer:hover{
+    color:gray;
+}
+
+#active{
+    color:gray;
+}
+
+#visible{
+    transition: opacity 300ms ease-in-out .1s;
+    opacity: 1;
+}
